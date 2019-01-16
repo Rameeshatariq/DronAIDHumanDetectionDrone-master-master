@@ -1,0 +1,407 @@
+{
+  "project_info": {
+    "project_number": "990206010016",
+    "firebase_url": "https://dronaid-26574.firebaseio.com",
+    "project_id": "dronaid-26574",
+    "storage_bucket": "dronaid-26574.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:964fcd14c5a34f3b",
+        "android_client_info": {
+          "package_name": "com.example.cv.dronaid_humandetectiondrone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-6h83lu05sr0bkqb37q764qb20ggc72hj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cv.dronaid_humandetectiondrone",
+            "certificate_hash": "ea9175e2079cd17449f7d1dbf874333aa7b1f400"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:202401fe39c36de5",
+        "android_client_info": {
+          "package_name": "com.example.cv.dronaidhumandetectiondrone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-2pj04ec4jnlc7besu6s73pv4fg01uvnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cv.dronaidhumandetectiondrone",
+            "certificate_hash": "ea9175e2079cd17449f7d1dbf874333aa7b1f400"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:5730aa964e63c9b4",
+        "android_client_info": {
+          "package_name": "com.example.cv.myapplication6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-3431u69mhbqkrjriamlovj6iegummso1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cv.myapplication6",
+            "certificate_hash": "ea9175e2079cd17449f7d1dbf874333aa7b1f400"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:f0c8cb4186f350d0",
+        "android_client_info": {
+          "package_name": "com.example.meesh.dronaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-gv5967tn69rlc28sqea26j0i2abhfrgp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meesh.dronaid",
+            "certificate_hash": "5369a1347fbeb3aa7b00485b131a6ddf05f33bfb"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:70874ee7efc48d4e",
+        "android_client_info": {
+          "package_name": "com.example.meesh.messaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-kuj6cgadqhnvglmo09m2r82u5pg8rkcf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meesh.messaging",
+            "certificate_hash": "5369a1347fbeb3aa7b00485b131a6ddf05f33bfb"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:5ec105b986e6d801",
+        "android_client_info": {
+          "package_name": "com.example.nimra.dron"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-cor2o8fjcarq7ni9en5pglisibpf5nmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nimra.dron",
+            "certificate_hash": "b1e72fadb5c71fd9e6c73ccb2b4f2083a7233132"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:67ca251b207a1fcb",
+        "android_client_info": {
+          "package_name": "com.example.nimra.dronaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-f9m33pheeoe034i4b9ec0mu7upe7ctgf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nimra.dronaid",
+            "certificate_hash": "b1e72fadb5c71fd9e6c73ccb2b4f2083a7233132"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:ee12e625d0bf153a",
+        "android_client_info": {
+          "package_name": "com.example.nimra.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-qh7pgurblmrmp940g18j7s8c1let59km.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nimra.myapplication",
+            "certificate_hash": "b1e72fadb5c71fd9e6c73ccb2b4f2083a7233132"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:990206010016:android:04e6284148d9b0ed",
+        "android_client_info": {
+          "package_name": "com.example.nimra.nim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "990206010016-luqhv1oqa6cmc1achrnlrlhud5v3k7c6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nimra.nim",
+            "certificate_hash": "b1e72fadb5c71fd9e6c73ccb2b4f2083a7233132"
+          }
+        },
+        {
+          "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVtLlQ4ZZyH875UenS_eNOBP-jpKb1zhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "990206010016-p838aefp28klr2qo2uv36t1urkdaje3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

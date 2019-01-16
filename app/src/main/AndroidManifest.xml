@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cv.dronaidhumandetectiondrone">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="DronAID"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".FCM_Messaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCMInstanceService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".homeepage"
+            android:label="@string/title_activity_homeepage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login"
+            android:label="DronAID"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".systemmanager"
+            android:label="DronAID"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".RescueMode"
+            android:label="@string/title_activity_rescue_mode"
+            android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="com.example.cv.dronaidhumandetectiondrone_TARGET_NOTIFICATION_RESCUE" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".gallery"
+            android:label="@string/title_activity_gallery"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".profile" />
+        <activity android:name=".addGuard"
+            android:label="DronAID"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SecurityMode"
+            android:label="@string/title_activity_security_mode"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.example.cv.dronaidhumandetectiondrone_TARGET_NOTIFICATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
