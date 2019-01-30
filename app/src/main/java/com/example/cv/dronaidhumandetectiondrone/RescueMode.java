@@ -19,6 +19,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,6 +33,7 @@ public class RescueMode extends AppCompatActivity
     private FirebaseDatabase mfirebaseDatabase;
     private DatabaseReference mDatabase;
     private ImageView img;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,7 +94,12 @@ public class RescueMode extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+            startActivity(new Intent(this, homeepage.class));
+            finish();
+            Toast.makeText(this, "Rescue Mode is OFF", Toast.LENGTH_SHORT).show();
+
         }
+
     }
 
 

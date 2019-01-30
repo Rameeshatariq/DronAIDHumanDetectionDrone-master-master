@@ -6,8 +6,7 @@ package com.example.cv.dronaidhumandetectiondrone;
 
 public class Upload {
     private String date;
-    private String latitude;
-    private String longitude;
+    private String location;
     private String mImageUrl;
     private String time;
 
@@ -15,10 +14,9 @@ public class Upload {
 
     }
 
-    public Upload(String dates, String latitudes, String longitudes, String mImageUrls, String times){
+    public Upload(String dates, String locations, String mImageUrls, String times){
         date = dates;
-        latitude = latitudes;
-        longitude = longitudes;
+        location=locations;
         mImageUrl = mImageUrls;
         time = times;
     }
@@ -31,20 +29,12 @@ public class Upload {
         this.date = date;
     }
 
-    public String getLatitude() {
-        return latitude;
+    public String getLocation() {
+        return location;
     }
 
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
-
-    public String getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getmImageUrl() {

@@ -2,8 +2,11 @@ package com.example.cv.dronaidhumandetectiondrone;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -35,12 +39,13 @@ public class login extends AppCompatActivity implements View.OnClickListener {
         finish();
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-    /*   pro = (Button) findViewById(R.id.test);
+     /* pro = (Button) findViewById(R.id.test);
         pro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,6 +53,10 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                 startActivity(i);
             }
         });*/
+
+        android.support.v7.widget.Toolbar toolbar= (android.support.v7.widget.Toolbar) findViewById(R.id.toolbarlogin);
+        toolbar.setTitle("DronAID");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         firebaseAuth=FirebaseAuth.getInstance();
         if(firebaseAuth.getCurrentUser() != null){
@@ -72,8 +81,8 @@ public class login extends AppCompatActivity implements View.OnClickListener {
             Toast.makeText(this, "Please Enter Email", Toast.LENGTH_LONG).show();
             return;
         }
-        if(TextUtils.isEmpty(password)){
-            Toast.makeText(this, "Please Enter Password", Toast.LENGTH_LONG).show();
+        if(TextUtils.isEmpty(password) || password.length() < 6){
+            Toast.makeText(this, "Please Enter Password of minimum 6 characters", Toast.LENGTH_LONG).show();
             return;
         }
         progressDialog.setMessage("User Logging In");

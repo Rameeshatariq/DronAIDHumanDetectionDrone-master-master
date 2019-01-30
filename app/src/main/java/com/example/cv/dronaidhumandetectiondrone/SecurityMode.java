@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -34,8 +35,7 @@ public class SecurityMode extends AppCompatActivity
     private DatabaseReference mDatabase;
     private TextView date;
     private TextView time;
-    private TextView longitude;
-    private TextView latitude;
+    private TextView location;
     private ImageView img;
 
     @Override
@@ -45,8 +45,7 @@ public class SecurityMode extends AppCompatActivity
 
         date = (TextView)findViewById(R.id.date1);
         time = (TextView)findViewById(R.id.time1);
-        longitude = (TextView)findViewById(R.id.longitude1);
-        latitude = (TextView)findViewById(R.id.latitude1);
+        location = (TextView)findViewById(R.id.location1);
         img = (ImageView) findViewById(R.id.img);
 
 
@@ -62,13 +61,11 @@ public class SecurityMode extends AppCompatActivity
                     notification uInfo = new notification();
                     uInfo.setDate(ds.child("noti").getValue(notification.class).getDate());
                     uInfo.setTime(ds.child("noti").getValue(notification.class).getTime());
-                    uInfo.setLongitude(ds.child("noti").getValue(notification.class).getLongitude());
-                    uInfo.setLatitude(ds.child("noti").getValue(notification.class).getLatitude());
+                    uInfo.setLocation(ds.child("noti").getValue(notification.class).getLocation());
                     uInfo.setMImage(ds.child("noti").getValue(notification.class).getMImage());
                     date.setText(uInfo.getDate());
                     time.setText(uInfo.getTime());
-                    longitude.setText(uInfo.getLongitude());
-                    latitude.setText(uInfo.getLatitude());
+                    location.setText(uInfo.getLocation());
                     String image = uInfo.getMImage();
                     String base64Image = image.split(",")[1];
                     String add = "//Z";
@@ -110,6 +107,9 @@ public class SecurityMode extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+            startActivity(new Intent(this, homeepage.class));
+            finish();
+            Toast.makeText(this, "Security Mode is OFF", Toast.LENGTH_SHORT).show();
         }
     }
 

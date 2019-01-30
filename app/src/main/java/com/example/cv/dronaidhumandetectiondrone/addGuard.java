@@ -3,9 +3,12 @@ package com.example.cv.dronaidhumandetectiondrone;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -17,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -61,10 +65,16 @@ public class addGuard extends AppCompatActivity implements View.OnClickListener{
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_guard);
+
+        android.support.v7.widget.Toolbar toolbar= (android.support.v7.widget.Toolbar) findViewById(R.id.toolbarguard);
+        toolbar.setTitle("DronAID");
+        toolbar.setTitleTextColor(Color.WHITE);
+
         imageView = (ImageView) findViewById(R.id.image);
         imageView.setOnClickListener(new View.OnClickListener() {
 
@@ -137,16 +147,16 @@ public class addGuard extends AppCompatActivity implements View.OnClickListener{
             return;
         }
 
-        if (TextUtils.isEmpty(cnicno)) {
+        if (TextUtils.isEmpty(cnicno) || cnicno.length() < 13) {
             //password is empty
-            Toast.makeText(this, "Please Enter Cnic", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Enter Cnic of exactly 13 numbers", Toast.LENGTH_LONG).show();
             //stopping the function execution further
             return;
         }
 
-        if (TextUtils.isEmpty(userphonenumber)) {
+        if (TextUtils.isEmpty(userphonenumber) || userphonenumber.length() < 11) {
             //password is empty
-            Toast.makeText(this, "Please Enter Contact Number", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Enter Contact Number of exactly 11 numbers", Toast.LENGTH_LONG).show();
             //stopping the function execution further
             return;
         } else {

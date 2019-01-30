@@ -39,8 +39,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         Upload uploadCurrent = mUploads.get(position);
         holder.textViewdate.setText(uploadCurrent.getDate());
         holder.textViewtime.setText(uploadCurrent.getTime());
-        holder.textViewlongitude.setText(uploadCurrent.getLongitude());
-        holder.textViewlatitude.setText(uploadCurrent.getLatitude());
+        holder.textViewlocation.setText(uploadCurrent.getLocation());
         String img = uploadCurrent.getmImageUrl();
         String base64Image = img.split(",")[1];
         String add = "//Z";
@@ -59,8 +58,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     public class ImageViewHolder extends RecyclerView.ViewHolder {
         public TextView textViewdate;
         public TextView textViewtime;
-        public TextView textViewlongitude;
-        public TextView textViewlatitude;
+        public TextView textViewlocation;
         public ImageView imageView;
 
         public ImageViewHolder(View itemView) {
@@ -68,8 +66,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
             textViewdate = itemView.findViewById(R.id.text_view_name);
             textViewtime = itemView.findViewById(R.id.timetext);
-            textViewlongitude = itemView.findViewById(R.id.longitudetext);
-            textViewlatitude = itemView.findViewById(R.id.latitudetext);
+            textViewlocation = itemView.findViewById(R.id.glocation1);
             imageView = itemView.findViewById(R.id.image_view_upload);
         }
     }

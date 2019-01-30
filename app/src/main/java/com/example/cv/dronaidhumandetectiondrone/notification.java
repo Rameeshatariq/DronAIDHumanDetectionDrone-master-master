@@ -2,8 +2,7 @@ package com.example.cv.dronaidhumandetectiondrone;
 
 public class notification {
     private String date;
-    private String latitude;
-    private String longitude;
+    private String location;
     private String time;
     private String mImage;
 
@@ -11,10 +10,9 @@ public class notification {
 
     }
 
-    public notification(String dates, String latitudes, String longitudes, String mImages, String times){
+    public notification(String dates, String locations, String mImages, String times){
         date = dates;
-        latitude = latitudes;
-        longitude = longitudes;
+        location=locations;
         time = times;
         mImage = mImages;
 
@@ -36,20 +34,12 @@ public class notification {
         this.mImage = mImage;
     }
 
-    public String getLatitude() {
-        return latitude;
+    public String getLocation() {
+        return location;
     }
 
-    public void setLatitude(String latitude) {
-        this.latitude = latitude;
-    }
-
-    public String getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getTime() {

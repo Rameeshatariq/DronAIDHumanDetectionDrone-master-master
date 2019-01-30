@@ -28,24 +28,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/time"
-        android:layout_marginTop="122dp"
+        android:layout_marginTop="120dp"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:text="Date"
+        android:text="Date:"
         android:layout_alignLeft="@+id/time" />
 
     <TextView
         android:id="@+id/date1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/date"
-        android:layout_marginEnd="72dp"
+        android:layout_centerHorizontal="true"
         android:text="Date"
         android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginRight="72dp"
-        android:layout_alignParentRight="true" />
+        android:textStyle="bold" />
 
 
     <TextView
@@ -73,58 +70,34 @@
 
 
     <TextView
-        android:id="@+id/longitude"
+        android:id="@+id/location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/date"
-        android:layout_marginTop="205dp"
+        android:layout_marginTop="200dp"
+        android:text="Location:"
         android:textSize="20dp"
-        android:textStyle="bold"
-        android:text="Longitude:"
-        android:layout_alignLeft="@+id/date" />
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/longitude1"
+        android:id="@+id/location1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/date1"
-        android:layout_alignTop="@+id/longitude"
-        android:text="Longitude:"
+        android:layout_alignTop="@+id/location"
+        android:text="Location:"
         android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_alignLeft="@+id/date1" />
+        android:textStyle="bold" />
 
-
-    <TextView
-        android:id="@+id/latitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/date"
-        android:layout_centerVertical="true"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:text="Latitude:"
-        android:layout_alignLeft="@+id/date" />
-
-    <TextView
-        android:id="@+id/latitude1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/date1"
-        android:layout_centerVertical="true"
-        android:text="Latitude:"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_alignLeft="@+id/date1" />
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="350dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="65dp" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp" />
 
 
 </RelativeLayout>

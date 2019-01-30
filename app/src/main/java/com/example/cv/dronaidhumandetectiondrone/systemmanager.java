@@ -3,12 +3,18 @@ package com.example.cv.dronaidhumandetectiondrone;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.text.TextUtils;
+import android.text.style.TtsSpan;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
@@ -18,6 +24,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -70,11 +77,15 @@ public class systemmanager extends AppCompatActivity implements View.OnClickList
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_systemmanager);
 
+        android.support.v7.widget.Toolbar toolbar= (android.support.v7.widget.Toolbar) findViewById(R.id.toolbarsupervisor);
+        toolbar.setTitle("DronAID");
+        toolbar.setTitleTextColor(Color.WHITE);
 
         imageView = (ImageView) findViewById(R.id.image);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -150,6 +161,20 @@ public class systemmanager extends AppCompatActivity implements View.OnClickList
         final String type= employeetype.getSelectedItem().toString().trim();
         final String userphonenumber = contactno.getText().toString().trim();
 
+        InputFilter filter = new InputFilter() {
+            public CharSequence filter(CharSequence src, int start, int end,
+                                       Spanned d, int dstart, int dend) {
+                for (int i = start; i < end; i++) {
+                    if (!Character.isLetter(src.charAt(i))) {
+                        return src.subSequence(start, i-1);
+                    }
+                }
+                return null;
+            }
+        };
+
+        name.setFilters(new InputFilter[]{filter});
+
 
 
         if (TextUtils.isEmpty(emailid)) {
@@ -159,9 +184,9 @@ public class systemmanager extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        if (TextUtils.isEmpty(pass)) {
+        if (TextUtils.isEmpty(pass) || pass.length() < 6 ) {
             //password is empty
-            Toast.makeText(this, "Please Enter Password", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Enter Password of minimum 6 characters", Toast.LENGTH_LONG).show();
             //stopping the function execution further
             return;
         }
@@ -173,16 +198,16 @@ public class systemmanager extends AppCompatActivity implements View.OnClickList
             return;
         }
 
-        if (TextUtils.isEmpty(cnicno)) {
+        if (TextUtils.isEmpty(cnicno) || cnicno.length() < 13) {
             //password is empty
-            Toast.makeText(this, "Please Enter Cnic", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Enter Cnic of exactly 13 numbers", Toast.LENGTH_LONG).show();
             //stopping the function execution further
             return;
         }
 
-        if (TextUtils.isEmpty(userphonenumber)) {
+        if (TextUtils.isEmpty(userphonenumber) || userphonenumber.length() < 11) {
             //password is empty
-            Toast.makeText(this, "Please Enter Contact Number", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Please Enter Contact Number of exactly 11 numbers", Toast.LENGTH_LONG).show();
             //stopping the function execution further
             return;
         }
